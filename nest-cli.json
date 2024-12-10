@@ -1,0 +1,31 @@
+{
+  "root": ".",
+  "sourceRoot": ".",
+  "monorepo": true,
+  "compilerOptions": {
+    "webpack": true,
+    "deleteOutDir": true
+  },
+
+  "projects": {
+    "proj1": {
+      "type": "application",
+      "root": "apps/proj1",
+      "entryFile": "main",
+      "sourceRoot": "apps/proj1/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/proj1/tsconfig.app.json"
+      }
+    },
+
+    "proj2": {
+      "type": "application",
+      "root": "apps/proj2",
+      "entryFile": "main",
+      "sourceRoot": "apps/proj2/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/proj2/tsconfig.app.json"
+      }
+    }
+  }
+}
