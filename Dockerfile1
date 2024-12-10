@@ -31,8 +31,5 @@ RUN npm ci --only=production
 # 从构建阶段复制编译后的代码
 COPY --from=builder /app/dist/apps/proj1 ./dist
 
-# 暴露端口
-EXPOSE 3000
-
 # 运行应用
 CMD ["node", "dist/main"] 
