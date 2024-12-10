@@ -6,7 +6,7 @@ import { MainModule } from './main.module';
 async function bootstrap() {
   const app = await NestFactory.create(MainModule);
   const config = app.get(ConfigService);
-  await app.listen(config.get('PORT1', 7002));
+  await app.listen(config.get('PORT', 7002));
   console.log(`Application is running on: ${await app.getUrl()}\n`);
 }
 
